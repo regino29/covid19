@@ -4,15 +4,298 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#C1B9B9"
     tools:context=".MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
+    <androidx.cardview.widget.CardView
+        android:id="@+id/activity_main_track_button"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_margin="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/activity_main_cardview"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ScrollView
+                android:id="@+id/activity_main_scrollview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <TextView
+                        android:id="@+id/activity_main_globalStats"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Global Statistics"
+                        android:textSize="30sp"
+                        android:gravity="center"
+                        android:textStyle="bold"
+                        />
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:paddingHorizontal="7dp"
+                        android:paddingVertical="3dp">
+
+                        <TextView
+                            android:id="@+id/textview"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Cases"
+                            android:textSize="25sp"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <TextView
+                            android:id="@+id/activity_main_cases"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="0"
+                            android:textSize="25sp"
+                            app:layout_constraintBottom_toBottomOf="parent"
+
+                            app:layout_constraintEnd_toEndOf="@+id/textview"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:paddingHorizontal="7dp"
+                        android:paddingVertical="3dp">
+
+                        <TextView
+                            android:id="@+id/textview1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Recovered"
+                            android:textSize="25sp"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <TextView
+                            android:id="@+id/activity_main_recovered"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="0"
+                            android:textSize="25sp"
+                            app:layout_constraintBottom_toBottomOf="parent"
+
+                            app:layout_constraintEnd_toEndOf="@+id/textview1"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:paddingHorizontal="7dp"
+                        android:paddingVertical="3dp">
+
+                        <TextView
+                            android:id="@+id/textview2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Critical"
+                            android:textSize="25sp"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <TextView
+                            android:id="@+id/activity_main_critical"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="0"
+                            android:textSize="25sp"
+                            app:layout_constraintBottom_toBottomOf="parent"
+
+                            app:layout_constraintEnd_toEndOf="@+id/textview2"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:paddingHorizontal="7dp"
+                        android:paddingVertical="3dp">
+
+                        <TextView
+                            android:id="@+id/textview3"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Active"
+                            android:textSize="25sp"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <TextView
+                            android:id="@+id/activity_main_active"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="0"
+                            android:textSize="25sp"
+                            app:layout_constraintBottom_toBottomOf="parent"
+
+                            app:layout_constraintEnd_toEndOf="@+id/textview3"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:paddingHorizontal="7dp"
+                        android:paddingVertical="3dp">
+
+                        <TextView
+                            android:id="@+id/textview4"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Today Cases"
+                            android:textSize="25sp"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <TextView
+                            android:id="@+id/activity_main_new_cases"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="0"
+                            android:textSize="25sp"
+                            app:layout_constraintBottom_toBottomOf="parent"
+
+                            app:layout_constraintEnd_toEndOf="@+id/textview4"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:paddingHorizontal="7dp"
+                        android:paddingVertical="3dp">
+
+                        <TextView
+                            android:id="@+id/textview5"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Total Deaths"
+                            android:textSize="25sp"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <TextView
+                            android:id="@+id/activity_main_deaths"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="0"
+                            android:textSize="25sp"
+                            app:layout_constraintBottom_toBottomOf="parent"
+
+                            app:layout_constraintEnd_toEndOf="@+id/textview5"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:paddingHorizontal="7dp"
+                        android:paddingVertical="3dp">
+
+                        <TextView
+                            android:id="@+id/textview6"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Today Deaths"
+                            android:textSize="25sp"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <TextView
+                            android:id="@+id/activity_main_new_deaths"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="0"
+                            android:textSize="25sp"
+                            app:layout_constraintBottom_toBottomOf="parent"
+
+                            app:layout_constraintEnd_toEndOf="@+id/textview6"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:paddingHorizontal="7dp"
+                        android:paddingVertical="3dp">
+
+                        <TextView
+                            android:id="@+id/textview7"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Affected Countries"
+                            android:textSize="25sp"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <TextView
+                            android:id="@+id/activity_main_countries_affected"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="0"
+                            android:textSize="25sp"
+                            app:layout_constraintBottom_toBottomOf="parent"
+
+                            app:layout_constraintEnd_toEndOf="@+id/textview7"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+                </LinearLayout>
+
+            </ScrollView>
+
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <Button
+        android:id="@+id/activity_main_cardview"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
+        android:layout_margin="20dp"
+        android:text="Track Country"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:onClick="trackCountries"
+        />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
