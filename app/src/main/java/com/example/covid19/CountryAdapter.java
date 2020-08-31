@@ -18,11 +18,13 @@ public class CountryAdapter extends RecyclerView.Adapter<CountryAdapter.MyViewHo
 
     private List<CountryModel> countries;
     private Context context;
+    private OnNoteListener mOnNoteListener;
 
 
-    public CountryAdapter(List<CountryModel> countries,Context context){
+    public CountryAdapter(List<CountryModel> countries,Context context,OnNoteListener mOnNoteListener){
         this.countries=countries;
         this.context=context;
+        this.mOnNoteListener=mOnNoteListener;
     }
 
 
@@ -30,7 +32,7 @@ public class CountryAdapter extends RecyclerView.Adapter<CountryAdapter.MyViewHo
     @Override
     public CountryAdapter.MyViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         View mView = LayoutInflater.from(parent.getContext()).inflate(R.layout.country_item, parent, false);
-        return new MyViewHolder( mView );
+        return new MyViewHolder( mView,mOnNoteListener );
     }
 
     @Override
@@ -46,17 +48,30 @@ public class CountryAdapter extends RecyclerView.Adapter<CountryAdapter.MyViewHo
         return countries.size();
     }
 
-    public static class MyViewHolder extends RecyclerView.ViewHolder{
+    public static class MyViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener{
 
         private ImageView flag;
         private TextView country;
 
-        public MyViewHolder(@NonNull View itemView) {
+        OnNoteListener onNoteListener;
+
+        public MyViewHolder(@NonNull View itemView, OnNoteListener onNoteListener) {
             super( itemView );
             flag=itemView.findViewById( R.id.country_item_image );
             country=itemView.findViewById( R.id.country_item_country_name );
+            this.onNoteListener=onNoteListener;
+
+            itemView.setOnClickListener( this );
+        }
+
+        @Override
+        public void onClick(View view) {
+            onNoteListener.onNoteClick( getAdapterPosition() );
         }
     }
 
+    public interface  OnNoteListener{
+        void onNoteClick(int position);
+    }
 
 }

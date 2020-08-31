@@ -13,77 +13,62 @@
 11    <uses-permission android:name="android.permission.WAKE_LOCK" />
 11-->C:\Users\regino\Documents\GitHub\covid19\app\src\main\AndroidManifest.xml:5:5-68
 11-->C:\Users\regino\Documents\GitHub\covid19\app\src\main\AndroidManifest.xml:5:22-65
-12
-13    <!-- <uses-feature android:name="android.hardware.type.watch" /> -->
-14
-15    <uses-permission android:name="android.permission.INTERNET" />
-15-->C:\Users\regino\Documents\GitHub\covid19\app\src\main\AndroidManifest.xml:9:5-67
-15-->C:\Users\regino\Documents\GitHub\covid19\app\src\main\AndroidManifest.xml:9:22-64
-16
-17    <application
-17-->C:\Users\regino\Documents\GitHub\covid19\app\src\main\AndroidManifest.xml:11:5-46:19
-18        android:allowBackup="true"
-18-->C:\Users\regino\Documents\GitHub\covid19\app\src\main\AndroidManifest.xml:12:9-35
-19        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
-19-->[androidx.core:core:1.3.0] C:\Users\regino\.gradle\caches\transforms-2\files-2.1\429fb715fcc7711d4ab133e350b6f531\core-1.3.0\AndroidManifest.xml:24:18-86
-20        android:debuggable="true"
-21        android:extractNativeLibs="false"
-22        android:icon="@mipmap/ic_launcher"
-22-->C:\Users\regino\Documents\GitHub\covid19\app\src\main\AndroidManifest.xml:13:9-43
-23        android:label="@string/app_name"
-23-->C:\Users\regino\Documents\GitHub\covid19\app\src\main\AndroidManifest.xml:14:9-41
-24        android:roundIcon="@mipmap/ic_launcher_round"
-24-->C:\Users\regino\Documents\GitHub\covid19\app\src\main\AndroidManifest.xml:15:9-54
-25        android:supportsRtl="true"
-25-->C:\Users\regino\Documents\GitHub\covid19\app\src\main\AndroidManifest.xml:16:9-35
-26        android:testOnly="true"
-27        android:theme="@style/AppTheme" >
-27-->C:\Users\regino\Documents\GitHub\covid19\app\src\main\AndroidManifest.xml:17:9-40
+12    <uses-permission android:name="android.permission.INTERNET" />
+12-->C:\Users\regino\Documents\GitHub\covid19\app\src\main\AndroidManifest.xml:6:5-67
+12-->C:\Users\regino\Documents\GitHub\covid19\app\src\main\AndroidManifest.xml:6:22-64
+13
+14    <application
+14-->C:\Users\regino\Documents\GitHub\covid19\app\src\main\AndroidManifest.xml:8:5-34:19
+15        android:allowBackup="true"
+15-->C:\Users\regino\Documents\GitHub\covid19\app\src\main\AndroidManifest.xml:9:9-35
+16        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+16-->[androidx.core:core:1.3.0] C:\Users\regino\.gradle\caches\transforms-2\files-2.1\429fb715fcc7711d4ab133e350b6f531\core-1.3.0\AndroidManifest.xml:24:18-86
+17        android:debuggable="true"
+18        android:extractNativeLibs="false"
+19        android:icon="@mipmap/ic_launcher"
+19-->C:\Users\regino\Documents\GitHub\covid19\app\src\main\AndroidManifest.xml:10:9-43
+20        android:label="@string/app_name"
+20-->C:\Users\regino\Documents\GitHub\covid19\app\src\main\AndroidManifest.xml:11:9-41
+21        android:roundIcon="@mipmap/ic_launcher_round"
+21-->C:\Users\regino\Documents\GitHub\covid19\app\src\main\AndroidManifest.xml:12:9-54
+22        android:supportsRtl="true"
+22-->C:\Users\regino\Documents\GitHub\covid19\app\src\main\AndroidManifest.xml:13:9-35
+23        android:testOnly="true"
+24        android:theme="@style/AppTheme" >
+24-->C:\Users\regino\Documents\GitHub\covid19\app\src\main\AndroidManifest.xml:14:9-40
+25        <meta-data
+25-->C:\Users\regino\Documents\GitHub\covid19\app\src\main\AndroidManifest.xml:17:9-19:36
+26            android:name="com.google.android.wearable.standalone"
+26-->C:\Users\regino\Documents\GitHub\covid19\app\src\main\AndroidManifest.xml:18:13-66
+27            android:value="true" />
+27-->C:\Users\regino\Documents\GitHub\covid19\app\src\main\AndroidManifest.xml:19:13-33
 28
-29        <!-- <uses-library -->
-30        <!-- android:name="com.google.android.wearable" -->
-31        <!-- android:required="true" /> -->
-32
-33
-34        <!--
-35               Set to true if your app is Standalone, that is, it does not require the handheld
-36               app to run.
-37        -->
-38        <meta-data
-38-->C:\Users\regino\Documents\GitHub\covid19\app\src\main\AndroidManifest.xml:26:9-28:36
-39            android:name="com.google.android.wearable.standalone"
-39-->C:\Users\regino\Documents\GitHub\covid19\app\src\main\AndroidManifest.xml:27:13-66
-40            android:value="true" />
-40-->C:\Users\regino\Documents\GitHub\covid19\app\src\main\AndroidManifest.xml:28:13-33
-41
-42        <activity
-42-->C:\Users\regino\Documents\GitHub\covid19\app\src\main\AndroidManifest.xml:30:9-38:20
-43            android:name="com.example.covid19.Countries"
-43-->C:\Users\regino\Documents\GitHub\covid19\app\src\main\AndroidManifest.xml:31:13-38
-44            android:label="@string/title_activity_countries" >
-44-->C:\Users\regino\Documents\GitHub\covid19\app\src\main\AndroidManifest.xml:32:13-61
-45
-46            <!-- <intent-filter> -->
-47            <!-- <action android:name="android.intent.action.MAIN" /> -->
-48
-49
-50            <!-- &lt;!&ndash;                <category android:name="android.intent.category.LAUNCHER" />&ndash;&gt; -->
-51            <!-- </intent-filter> -->
-52        </activity>
-53        <activity android:name="com.example.covid19.MainActivity" >
-53-->C:\Users\regino\Documents\GitHub\covid19\app\src\main\AndroidManifest.xml:39:9-45:20
-53-->C:\Users\regino\Documents\GitHub\covid19\app\src\main\AndroidManifest.xml:39:19-47
-54            <intent-filter>
-54-->C:\Users\regino\Documents\GitHub\covid19\app\src\main\AndroidManifest.xml:40:13-44:29
-55                <action android:name="android.intent.action.MAIN" />
-55-->C:\Users\regino\Documents\GitHub\covid19\app\src\main\AndroidManifest.xml:41:17-69
-55-->C:\Users\regino\Documents\GitHub\covid19\app\src\main\AndroidManifest.xml:41:25-66
-56
-57                <category android:name="android.intent.category.LAUNCHER" />
-57-->C:\Users\regino\Documents\GitHub\covid19\app\src\main\AndroidManifest.xml:43:17-77
-57-->C:\Users\regino\Documents\GitHub\covid19\app\src\main\AndroidManifest.xml:43:27-74
-58            </intent-filter>
-59        </activity>
-60    </application>
-61
-62</manifest>
+29        <activity
+29-->C:\Users\regino\Documents\GitHub\covid19\app\src\main\AndroidManifest.xml:21:9-23:71
+30            android:name="com.example.covid19.DetailsActivity"
+30-->C:\Users\regino\Documents\GitHub\covid19\app\src\main\AndroidManifest.xml:22:13-44
+31            android:label="@string/title_activity_details" />
+31-->C:\Users\regino\Documents\GitHub\covid19\app\src\main\AndroidManifest.xml:23:13-59
+32        <activity
+32-->C:\Users\regino\Documents\GitHub\covid19\app\src\main\AndroidManifest.xml:24:9-26:73
+33            android:name="com.example.covid19.Countries"
+33-->C:\Users\regino\Documents\GitHub\covid19\app\src\main\AndroidManifest.xml:25:13-38
+34            android:label="@string/title_activity_countries" />
+34-->C:\Users\regino\Documents\GitHub\covid19\app\src\main\AndroidManifest.xml:26:13-61
+35        <activity android:name="com.example.covid19.MainActivity" >
+35-->C:\Users\regino\Documents\GitHub\covid19\app\src\main\AndroidManifest.xml:27:9-33:20
+35-->C:\Users\regino\Documents\GitHub\covid19\app\src\main\AndroidManifest.xml:27:19-47
+36            <intent-filter>
+36-->C:\Users\regino\Documents\GitHub\covid19\app\src\main\AndroidManifest.xml:28:13-32:29
+37                <action android:name="android.intent.action.MAIN" />
+37-->C:\Users\regino\Documents\GitHub\covid19\app\src\main\AndroidManifest.xml:29:17-69
+37-->C:\Users\regino\Documents\GitHub\covid19\app\src\main\AndroidManifest.xml:29:25-66
+38
+39                <category android:name="android.intent.category.LAUNCHER" />
+39-->C:\Users\regino\Documents\GitHub\covid19\app\src\main\AndroidManifest.xml:31:17-77
+39-->C:\Users\regino\Documents\GitHub\covid19\app\src\main\AndroidManifest.xml:31:27-74
+40            </intent-filter>
+41        </activity>
+42    </application>
+43
+44</manifest>

@@ -921,6 +921,14 @@ id actions
 id activity_chooser_view_content
 id activity_countries_recyclerView
 id activity_countries_search
+id activity_details_active
+id activity_details_cases
+id activity_details_countryStats
+id activity_details_critical
+id activity_details_deaths
+id activity_details_new_cases
+id activity_details_new_deaths
+id activity_details_recovered
 id activity_main_active
 id activity_main_cardview
 id activity_main_cases
@@ -1160,6 +1168,7 @@ layout abc_search_view
 layout abc_select_dialog_material
 layout abc_tooltip
 layout activity_countries
+layout activity_details
 layout activity_main
 layout country_item
 layout custom_dialog
@@ -1223,6 +1232,7 @@ string hello_world
 string search_menu_title
 string status_bar_notification_info_overflow
 string title_activity_countries
+string title_activity_details
 string ws_action_drawer_content_description
 string ws_navigation_drawer_content_description
 style AlertDialog_AppCompat

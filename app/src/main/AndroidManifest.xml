@@ -3,9 +3,6 @@
     package="com.example.covid19">
 
     <uses-permission android:name="android.permission.WAKE_LOCK" />
-
-<!--    <uses-feature android:name="android.hardware.type.watch" />-->
-
     <uses-permission android:name="android.permission.INTERNET" />
 
     <application
@@ -16,14 +13,17 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
 
+
         <meta-data
             android:name="com.google.android.wearable.standalone"
             android:value="true" />
 
         <activity
+            android:name=".DetailsActivity"
+            android:label="@string/title_activity_details"></activity>
+        <activity
             android:name=".Countries"
-            android:label="@string/title_activity_countries">
-        </activity>
+            android:label="@string/title_activity_countries"></activity>
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

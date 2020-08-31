@@ -1,5 +1,6 @@
 package com.example.covid19;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.widget.EditText;
 import android.widget.TextView;
@@ -24,7 +25,7 @@ import org.w3c.dom.Text;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Countries extends AppCompatActivity {
+public class Countries extends AppCompatActivity implements CountryAdapter.OnNoteListener {
 
     EditText search;
     RecyclerView recyclerView;
@@ -43,6 +44,9 @@ public class Countries extends AppCompatActivity {
         recyclerView=findViewById( R.id.activity_countries_recyclerView );
 
         fetchData();
+
+
+
 
 
     }
@@ -82,7 +86,7 @@ public class Countries extends AppCompatActivity {
                     }
 
 
-                    mAdapter=new CountryAdapter( countryModelsList,Countries.this );
+                    mAdapter=new CountryAdapter( countryModelsList,Countries.this ,Countries.this);
 
                     recyclerView.setLayoutManager( new LinearLayoutManager( Countries.this ) );
                     recyclerView.setAdapter( mAdapter );
@@ -105,6 +109,15 @@ public class Countries extends AppCompatActivity {
 
         RequestQueue requestQueue= Volley.newRequestQueue( this );
         requestQueue.add( request );
+
+    }
+
+    @Override
+    public void onNoteClick(int position) {
+
+        startActivity( new Intent( getApplicationContext(),DetailsActivity.class ).putExtra( "position",position) );
+
+
 
     }
 }
