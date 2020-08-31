@@ -4,6 +4,8 @@ import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Filter;
+import android.widget.Filterable;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -12,17 +14,20 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.bumptech.glide.Glide;
 
+import java.util.ArrayList;
 import java.util.List;
 
-public class CountryAdapter extends RecyclerView.Adapter<CountryAdapter.MyViewHolder> {
+public class CountryAdapter extends RecyclerView.Adapter<CountryAdapter.MyViewHolder> implements Filterable {
 
     private List<CountryModel> countries;
+    private List<CountryModel> fullCountries;
     private Context context;
     private OnNoteListener mOnNoteListener;
 
 
     public CountryAdapter(List<CountryModel> countries,Context context,OnNoteListener mOnNoteListener){
         this.countries=countries;
+        fullCountries=new ArrayList<>( countries );
         this.context=context;
         this.mOnNoteListener=mOnNoteListener;
     }
@@ -47,6 +52,42 @@ public class CountryAdapter extends RecyclerView.Adapter<CountryAdapter.MyViewHo
     public int getItemCount() {
         return countries.size();
     }
+
+    @Override
+    public Filter getFilter() {
+        return exampleFilter;
+    }
+
+    private Filter exampleFilter = new Filter() {
+        @Override
+        protected FilterResults performFiltering(CharSequence constraint) {
+            List<CountryModel> filteredList = new ArrayList<>(  );
+            if(constraint==null || constraint.length()==0){
+                filteredList.addAll( fullCountries );
+            }else{
+                String filterPattern = constraint.toString().toLowerCase().trim();
+
+                for(CountryModel i:fullCountries){
+                    if(i.getCounry().toLowerCase().contains( filterPattern ) ){
+                        filteredList.add(i);
+                    }
+                }
+            }
+
+            FilterResults results = new FilterResults();
+            results.values = filteredList;
+            return results;
+        }
+
+        @Override
+        protected void publishResults(CharSequence charSequence, FilterResults results) {
+
+            countries.clear();
+            countries.addAll((List) results.values );
+            notifyDataSetChanged();
+
+        }
+    };
 
     public static class MyViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener{
 

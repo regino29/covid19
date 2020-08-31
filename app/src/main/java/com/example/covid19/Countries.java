@@ -2,6 +2,8 @@ package com.example.covid19;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.text.Editable;
+import android.text.TextWatcher;
 import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -45,9 +47,23 @@ public class Countries extends AppCompatActivity implements CountryAdapter.OnNot
 
         fetchData();
 
+        search.addTextChangedListener( new TextWatcher() {
+            @Override
+            public void beforeTextChanged(CharSequence charSequence, int i, int i1, int i2) {
 
+            }
 
+            @Override
+            public void onTextChanged(CharSequence charSequence, int i, int i1, int i2) {
+                mAdapter.getFilter().filter( charSequence );
+                mAdapter.notifyDataSetChanged();
+            }
 
+            @Override
+            public void afterTextChanged(Editable editable) {
+
+            }
+        } );
 
     }
 
