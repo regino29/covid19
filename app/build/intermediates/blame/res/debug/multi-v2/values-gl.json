@@ -4,6 +4,23 @@
             "outputFile": "C:\\Users\\regino\\Documents\\GitHub\\covid19\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-gl\\values-gl.xml",
             "map": [
                 {
+                    "source": "C:\\Users\\regino\\.gradle\\caches\\transforms-2\\files-2.1\\fdd42d596c4f70d37e38036f9f6b5091\\wear-1.0.0\\res\\values-gl\\values-gl.xml",
+                    "from": {
+                        "startLines": "2,3",
+                        "startColumns": "4,4",
+                        "startOffsets": "55,167",
+                        "endColumns": "111,118",
+                        "endOffsets": "162,281"
+                    },
+                    "to": {
+                        "startLines": "31,32",
+                        "startColumns": "4,4",
+                        "startOffsets": "3037,3149",
+                        "endColumns": "111,118",
+                        "endOffsets": "3144,3263"
+                    }
+                },
+                {
                     "source": "C:\\Users\\regino\\.gradle\\caches\\transforms-2\\files-2.1\\429fb715fcc7711d4ab133e350b6f531\\core-1.3.0\\res\\values-gl\\values-gl.xml",
                     "from": {
                         "startLines": "2",

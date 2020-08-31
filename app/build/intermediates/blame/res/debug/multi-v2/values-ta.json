@@ -29,6 +29,23 @@
                         "endColumns": "112,101,114,88,110,120,78,75,97,99,94,93,106,99,101,93,97,97,80,107,102,98,115,102,104,156,101,81",
                         "endOffsets": "213,315,430,519,630,751,830,906,1004,1104,1199,1293,1400,1500,1602,1696,1794,1892,1973,2081,2184,2283,2399,2502,2607,2764,2866,2948"
                     }
+                },
+                {
+                    "source": "C:\\Users\\regino\\.gradle\\caches\\transforms-2\\files-2.1\\fdd42d596c4f70d37e38036f9f6b5091\\wear-1.0.0\\res\\values-ta\\values-ta.xml",
+                    "from": {
+                        "startLines": "2,3",
+                        "startColumns": "4,4",
+                        "startOffsets": "55,164",
+                        "endColumns": "108,119",
+                        "endOffsets": "159,279"
+                    },
+                    "to": {
+                        "startLines": "31,32",
+                        "startColumns": "4,4",
+                        "startOffsets": "3054,3163",
+                        "endColumns": "108,119",
+                        "endOffsets": "3158,3278"
+                    }
                 }
             ]
         }

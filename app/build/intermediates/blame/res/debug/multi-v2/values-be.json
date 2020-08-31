@@ -29,6 +29,23 @@
                         "endColumns": "100",
                         "endOffsets": "3013"
                     }
+                },
+                {
+                    "source": "C:\\Users\\regino\\.gradle\\caches\\transforms-2\\files-2.1\\fdd42d596c4f70d37e38036f9f6b5091\\wear-1.0.0\\res\\values-be\\values-be.xml",
+                    "from": {
+                        "startLines": "2,3",
+                        "startColumns": "4,4",
+                        "startOffsets": "55,173",
+                        "endColumns": "117,122",
+                        "endOffsets": "168,291"
+                    },
+                    "to": {
+                        "startLines": "31,32",
+                        "startColumns": "4,4",
+                        "startOffsets": "3018,3136",
+                        "endColumns": "117,122",
+                        "endOffsets": "3131,3254"
+                    }
                 }
             ]
         }
