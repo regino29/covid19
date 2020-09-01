@@ -3,59 +3,61 @@ package com.example.covid19.service;
 import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;
 
+import java.math.BigInteger;
+
 public class GlobalModel {
 
     @SerializedName("updated")
     @Expose
-    private Integer updated;
+    private BigInteger updated;
     @SerializedName("cases")
     @Expose
-    private Integer cases;
+    private BigInteger cases;
     @SerializedName("todayCases")
     @Expose
-    private Integer todayCases;
+    private BigInteger todayCases;
     @SerializedName("deaths")
     @Expose
-    private Integer deaths;
+    private BigInteger deaths;
     @SerializedName("todayDeaths")
     @Expose
-    private Integer todayDeaths;
+    private BigInteger todayDeaths;
     @SerializedName("recovered")
     @Expose
-    private Integer recovered;
+    private BigInteger recovered;
     @SerializedName("todayRecovered")
     @Expose
-    private Integer todayRecovered;
+    private BigInteger todayRecovered;
     @SerializedName("active")
     @Expose
-    private Integer active;
+    private BigInteger active;
     @SerializedName("critical")
     @Expose
-    private Integer critical;
+    private BigInteger critical;
     @SerializedName("casesPerOneMillion")
     @Expose
-    private Integer casesPerOneMillion;
+    private BigInteger casesPerOneMillion;
     @SerializedName("deathsPerOneMillion")
     @Expose
     private Float deathsPerOneMillion;
     @SerializedName("tests")
     @Expose
-    private Integer tests;
+    private BigInteger tests;
     @SerializedName("testsPerOneMillion")
     @Expose
     private Float testsPerOneMillion;
     @SerializedName("population")
     @Expose
-    private Integer population;
+    private BigInteger population;
     @SerializedName("oneCasePerPeople")
     @Expose
-    private Integer oneCasePerPeople;
+    private BigInteger oneCasePerPeople;
     @SerializedName("oneDeathPerPeople")
     @Expose
-    private Integer oneDeathPerPeople;
+    private BigInteger oneDeathPerPeople;
     @SerializedName("oneTestPerPeople")
     @Expose
-    private Integer oneTestPerPeople;
+    private BigInteger oneTestPerPeople;
     @SerializedName("activePerOneMillion")
     @Expose
     private Float activePerOneMillion;
@@ -67,11 +69,11 @@ public class GlobalModel {
     private Float criticalPerOneMillion;
     @SerializedName("affectedCountries")
     @Expose
-    private Integer affectedCountries;
+    private BigInteger affectedCountries;
 
 
 
-    public GlobalModel(Integer updated, Integer cases, Integer todayCases, Integer deaths, Integer todayDeaths, Integer recovered, Integer todayRecovered, Integer active, Integer critical, Integer casesPerOneMillion, Float deathsPerOneMillion, Integer tests, Float testsPerOneMillion, Integer population, Integer oneCasePerPeople, Integer oneDeathPerPeople, Integer oneTestPerPeople, Float activePerOneMillion, Float recoveredPerOneMillion, Float criticalPerOneMillion, Integer affectedCountries) {
+    public GlobalModel(BigInteger updated, BigInteger cases, BigInteger todayCases, BigInteger deaths, BigInteger todayDeaths, BigInteger recovered, BigInteger todayRecovered, BigInteger active, BigInteger critical, BigInteger casesPerOneMillion, Float deathsPerOneMillion, BigInteger tests, Float testsPerOneMillion, BigInteger population, BigInteger oneCasePerPeople, BigInteger oneDeathPerPeople, BigInteger oneTestPerPeople, Float activePerOneMillion, Float recoveredPerOneMillion, Float criticalPerOneMillion, BigInteger affectedCountries) {
         super();
         this.updated = updated;
         this.cases = cases;
@@ -97,83 +99,83 @@ public class GlobalModel {
     }
 
 
-    public Integer getUpdated() {
+    public BigInteger getUpdated() {
         return updated;
     }
 
-    public void setUpdated(Integer updated) {
+    public void setUpdated(BigInteger updated) {
         this.updated = updated;
     }
 
-    public Integer getCases() {
+    public BigInteger getCases() {
         return cases;
     }
 
-    public void setCases(Integer cases) {
+    public void setCases(BigInteger cases) {
         this.cases = cases;
     }
 
-    public Integer getTodayCases() {
+    public BigInteger getTodayCases() {
         return todayCases;
     }
 
-    public void setTodayCases(Integer todayCases) {
+    public void setTodayCases(BigInteger todayCases) {
         this.todayCases = todayCases;
     }
 
-    public Integer getDeaths() {
+    public BigInteger getDeaths() {
         return deaths;
     }
 
-    public void setDeaths(Integer deaths) {
+    public void setDeaths(BigInteger deaths) {
         this.deaths = deaths;
     }
 
-    public Integer getTodayDeaths() {
+    public BigInteger getTodayDeaths() {
         return todayDeaths;
     }
 
-    public void setTodayDeaths(Integer todayDeaths) {
+    public void setTodayDeaths(BigInteger todayDeaths) {
         this.todayDeaths = todayDeaths;
     }
 
-    public Integer getRecovered() {
+    public BigInteger getRecovered() {
         return recovered;
     }
 
-    public void setRecovered(Integer recovered) {
+    public void setRecovered(BigInteger recovered) {
         this.recovered = recovered;
     }
 
-    public Integer getTodayRecovered() {
+    public BigInteger getTodayRecovered() {
         return todayRecovered;
     }
 
-    public void setTodayRecovered(Integer todayRecovered) {
+    public void setTodayRecovered(BigInteger todayRecovered) {
         this.todayRecovered = todayRecovered;
     }
 
-    public Integer getActive() {
+    public BigInteger getActive() {
         return active;
     }
 
-    public void setActive(Integer active) {
+    public void setActive(BigInteger active) {
         this.active = active;
     }
 
-    public Integer getCritical() {
+    public BigInteger getCritical() {
         return critical;
     }
 
-    public void setCritical(Integer critical) {
+    public void setCritical(BigInteger critical) {
         this.critical = critical;
     }
 
-    public Integer getCasesPerOneMillion() {
+    public BigInteger getCasesPerOneMillion() {
         return casesPerOneMillion;
     }
 
-    public void setCasesPerOneMillion(Integer casesPerOneMillion) {
+    public void setCasesPerOneMillion(BigInteger casesPerOneMillion) {
         this.casesPerOneMillion = casesPerOneMillion;
     }
 
@@ -185,11 +187,11 @@ public class GlobalModel {
         this.deathsPerOneMillion = deathsPerOneMillion;
     }
 
-    public Integer getTests() {
+    public BigInteger getTests() {
         return tests;
     }
 
-    public void setTests(Integer tests) {
+    public void setTests(BigInteger tests) {
         this.tests = tests;
     }
 
@@ -201,35 +203,35 @@ public class GlobalModel {
         this.testsPerOneMillion = testsPerOneMillion;
     }
 
-    public Integer getPopulation() {
+    public BigInteger getPopulation() {
         return population;
     }
 
-    public void setPopulation(Integer population) {
+    public void setPopulation(BigInteger population) {
         this.population = population;
     }
 
-    public Integer getOneCasePerPeople() {
+    public BigInteger getOneCasePerPeople() {
         return oneCasePerPeople;
     }
 
-    public void setOneCasePerPeople(Integer oneCasePerPeople) {
+    public void setOneCasePerPeople(BigInteger oneCasePerPeople) {
         this.oneCasePerPeople = oneCasePerPeople;
     }
 
-    public Integer getOneDeathPerPeople() {
+    public BigInteger getOneDeathPerPeople() {
         return oneDeathPerPeople;
     }
 
-    public void setOneDeathPerPeople(Integer oneDeathPerPeople) {
+    public void setOneDeathPerPeople(BigInteger oneDeathPerPeople) {
         this.oneDeathPerPeople = oneDeathPerPeople;
     }
 
-    public Integer getOneTestPerPeople() {
+    public BigInteger getOneTestPerPeople() {
         return oneTestPerPeople;
     }
 
-    public void setOneTestPerPeople(Integer oneTestPerPeople) {
+    public void setOneTestPerPeople(BigInteger oneTestPerPeople) {
         this.oneTestPerPeople = oneTestPerPeople;
     }
 
@@ -257,11 +259,11 @@ public class GlobalModel {
         this.criticalPerOneMillion = criticalPerOneMillion;
     }
 
-    public Integer getAffectedCountries() {
+    public BigInteger getAffectedCountries() {
         return affectedCountries;
     }
 
-    public void setAffectedCountries(Integer affectedCountries) {
+    public void setAffectedCountries(BigInteger affectedCountries) {
         this.affectedCountries = affectedCountries;
     }
 

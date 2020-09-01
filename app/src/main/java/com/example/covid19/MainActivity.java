@@ -94,7 +94,7 @@ public class MainActivity extends AppCompatActivity {
 
 
         Retrofit retrofit = new Retrofit.Builder()
-                .baseUrl( "https://corona.lmao.ninja/v2" )
+                .baseUrl( "https://corona.lmao.ninja/v2/" )
                 .addConverterFactory( GsonConverterFactory.create() ).build();
 
         Api api = retrofit.create(Api.class);
@@ -105,20 +105,20 @@ public class MainActivity extends AppCompatActivity {
             public void onResponse(Call<GlobalModel> call, Response<GlobalModel> response) {
                 GlobalModel stats = response.body();
 
-                cases.setText( stats.getCases() );
-
-                critical.setText( stats.getCritical());
-                active.setText( stats.getActive() );
-                todayCases.setText( stats.getTodayCases() );
-                deaths.setText( stats.getDeaths() );
-                todayDeaths.setText( stats.getTodayCases() );
-                countries.setText( stats.getAffectedCountries() );
+                cases.setText( String.valueOf( stats.getCases()) );
+                recovered.setText( String.valueOf( stats.getRecovered() ) );
+                critical.setText( String.valueOf( stats.getCritical()));
+                active.setText( String.valueOf( stats.getActive()) );
+                todayCases.setText(String.valueOf( stats.getTodayCases()));
+                deaths.setText( String.valueOf( stats.getDeaths()) );
+                todayDeaths.setText( String.valueOf( stats.getTodayDeaths()) );
+                countries.setText( String.valueOf( stats.getAffectedCountries()) );
 
             }
 
             @Override
             public void onFailure(Call<GlobalModel> call, Throwable t) {
-                Toast.makeText( getApplicationContext(),t.getMessage(),Toast.LENGTH_SHORT ).show();
+                Toast.makeText( getApplicationContext(),t.getMessage(),Toast.LENGTH_LONG ).show();
             }
         } );
 
