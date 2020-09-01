@@ -11,6 +11,7 @@ MERGED from [androidx.cardview:cardview:1.0.0] C:\Users\regino\.gradle\caches\tr
 MERGED from [androidx.recyclerview:recyclerview-selection:1.1.0-rc01] C:\Users\regino\.gradle\caches\transforms-2\files-2.1\2706fdf12c961096dbc61a5ec4b35cef\recyclerview-selection-1.1.0-rc01\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.recyclerview:recyclerview:1.1.0] C:\Users\regino\.gradle\caches\transforms-2\files-2.1\6e57c04e98c372fcd8878b95a3d5645d\recyclerview-1.1.0\AndroidManifest.xml:17:1-24:12
 MERGED from [com.android.volley:volley:1.1.1] C:\Users\regino\.gradle\caches\transforms-2\files-2.1\07d99a98b9de0aa238979251b300d88c\jetified-volley-1.1.1\AndroidManifest.xml:2:1-11:12
+MERGED from [de.hdodenhof:circleimageview:3.1.0] C:\Users\regino\.gradle\caches\transforms-2\files-2.1\003b3e9ca38bd72fe3f9ef229cece401\jetified-circleimageview-3.1.0\AndroidManifest.xml:2:1-11:12
 MERGED from [com.github.bumptech.glide:glide:4.11.0] C:\Users\regino\.gradle\caches\transforms-2\files-2.1\dc9123763d17d918a4b107f1f30e6b9e\jetified-glide-4.11.0\AndroidManifest.xml:2:1-12:12
 MERGED from [androidx.fragment:fragment:1.1.0] C:\Users\regino\.gradle\caches\transforms-2\files-2.1\12c076570219bdc2a11e9d0df335391a\fragment-1.1.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.appcompat:appcompat-resources:1.2.0] C:\Users\regino\.gradle\caches\transforms-2\files-2.1\ee9b51f71825564f346013ea1d4d0318\jetified-appcompat-resources-1.2.0\AndroidManifest.xml:17:1-24:12
@@ -73,6 +74,8 @@ MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] C:\Users\regino\.
 MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] C:\Users\regino\.gradle\caches\transforms-2\files-2.1\75baa063235eedb7ab2cc635bdb88d73\constraintlayout-1.1.3\AndroidManifest.xml:9:5-20
 MERGED from [com.android.volley:volley:1.1.1] C:\Users\regino\.gradle\caches\transforms-2\files-2.1\07d99a98b9de0aa238979251b300d88c\jetified-volley-1.1.1\AndroidManifest.xml:9:5-20
 MERGED from [com.android.volley:volley:1.1.1] C:\Users\regino\.gradle\caches\transforms-2\files-2.1\07d99a98b9de0aa238979251b300d88c\jetified-volley-1.1.1\AndroidManifest.xml:9:5-20
+MERGED from [de.hdodenhof:circleimageview:3.1.0] C:\Users\regino\.gradle\caches\transforms-2\files-2.1\003b3e9ca38bd72fe3f9ef229cece401\jetified-circleimageview-3.1.0\AndroidManifest.xml:9:5-20
+MERGED from [de.hdodenhof:circleimageview:3.1.0] C:\Users\regino\.gradle\caches\transforms-2\files-2.1\003b3e9ca38bd72fe3f9ef229cece401\jetified-circleimageview-3.1.0\AndroidManifest.xml:9:5-20
 MERGED from [com.github.bumptech.glide:glide:4.11.0] C:\Users\regino\.gradle\caches\transforms-2\files-2.1\dc9123763d17d918a4b107f1f30e6b9e\jetified-glide-4.11.0\AndroidManifest.xml:10:5-20
 MERGED from [com.github.bumptech.glide:glide:4.11.0] C:\Users\regino\.gradle\caches\transforms-2\files-2.1\dc9123763d17d918a4b107f1f30e6b9e\jetified-glide-4.11.0\AndroidManifest.xml:10:5-20
 MERGED from [androidx.core:core:1.3.0] C:\Users\regino\.gradle\caches\transforms-2\files-2.1\429fb715fcc7711d4ab133e350b6f531\core-1.3.0\AndroidManifest.xml:24:5-89
@@ -145,6 +148,8 @@ MERGED from [androidx.recyclerview:recyclerview:1.1.0] C:\Users\regino\.gradle\c
 MERGED from [androidx.recyclerview:recyclerview:1.1.0] C:\Users\regino\.gradle\caches\transforms-2\files-2.1\6e57c04e98c372fcd8878b95a3d5645d\recyclerview-1.1.0\AndroidManifest.xml:20:5-22:41
 MERGED from [com.android.volley:volley:1.1.1] C:\Users\regino\.gradle\caches\transforms-2\files-2.1\07d99a98b9de0aa238979251b300d88c\jetified-volley-1.1.1\AndroidManifest.xml:7:5-43
 MERGED from [com.android.volley:volley:1.1.1] C:\Users\regino\.gradle\caches\transforms-2\files-2.1\07d99a98b9de0aa238979251b300d88c\jetified-volley-1.1.1\AndroidManifest.xml:7:5-43
+MERGED from [de.hdodenhof:circleimageview:3.1.0] C:\Users\regino\.gradle\caches\transforms-2\files-2.1\003b3e9ca38bd72fe3f9ef229cece401\jetified-circleimageview-3.1.0\AndroidManifest.xml:5:5-7:41
+MERGED from [de.hdodenhof:circleimageview:3.1.0] C:\Users\regino\.gradle\caches\transforms-2\files-2.1\003b3e9ca38bd72fe3f9ef229cece401\jetified-circleimageview-3.1.0\AndroidManifest.xml:5:5-7:41
 MERGED from [com.github.bumptech.glide:glide:4.11.0] C:\Users\regino\.gradle\caches\transforms-2\files-2.1\dc9123763d17d918a4b107f1f30e6b9e\jetified-glide-4.11.0\AndroidManifest.xml:6:5-8:41
 MERGED from [com.github.bumptech.glide:glide:4.11.0] C:\Users\regino\.gradle\caches\transforms-2\files-2.1\dc9123763d17d918a4b107f1f30e6b9e\jetified-glide-4.11.0\AndroidManifest.xml:6:5-8:41
 MERGED from [androidx.fragment:fragment:1.1.0] C:\Users\regino\.gradle\caches\transforms-2\files-2.1\12c076570219bdc2a11e9d0df335391a\fragment-1.1.0\AndroidManifest.xml:20:5-22:41

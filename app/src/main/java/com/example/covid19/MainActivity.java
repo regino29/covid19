@@ -11,13 +11,20 @@ import android.widget.Toast;
 
 import com.android.volley.Request;
 import com.android.volley.RequestQueue;
-import com.android.volley.Response;
 import com.android.volley.VolleyError;
 import com.android.volley.toolbox.StringRequest;
 import com.android.volley.toolbox.Volley;
+import com.example.covid19.service.Api;
+import com.example.covid19.service.GlobalModel;
 
 import org.json.JSONException;
 import org.json.JSONObject;
+
+import retrofit2.Call;
+import retrofit2.Callback;
+import retrofit2.Response;
+import retrofit2.Retrofit;
+import retrofit2.converter.gson.GsonConverterFactory;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -48,42 +55,72 @@ public class MainActivity extends AppCompatActivity {
 
     private void fetchData() {
 
-        String url="https://corona.lmao.ninja/v2/all";
+//        String url="https://corona.lmao.ninja/v2/all";
+//
+//        StringRequest request = new StringRequest( Request.Method.GET, url, new Response.Listener<String>() {
+//            @Override
+//            public void onResponse(String response) {
+//
+//
+//                try {
+//                    JSONObject jsonObject= new JSONObject( response.toString() );
+//
+//                    cases.setText( jsonObject.getString( "cases" ) );
+//                    recovered.setText( jsonObject.getString( "recovered" ) );
+//                    critical.setText( jsonObject.getString( "critical" ) );
+//                    active.setText( jsonObject.getString( "active" ) );
+//                    todayCases.setText( jsonObject.getString( "todayCases" ) );
+//                    deaths.setText( jsonObject.getString( "deaths" ) );
+//                    todayDeaths.setText( jsonObject.getString( "todayDeaths" ) );
+//                    countries.setText( jsonObject.getString( "affectedCountries" ) );
+//
+//
+//                } catch (JSONException e) {
+//                    e.printStackTrace();
+//                }
+//
+//
+//            }
+//        }, new Response.ErrorListener() {
+//            @Override
+//            public void onErrorResponse(VolleyError error) {
+//                Toast.makeText( MainActivity.this, error.getMessage(), Toast.LENGTH_SHORT ).show();
+//            }
+//        } );
+//
+//
+//        RequestQueue requestQueue= Volley.newRequestQueue( this );
+//        requestQueue.add( request );
 
-        StringRequest request = new StringRequest( Request.Method.GET, url, new Response.Listener<String>() {
+
+        Retrofit retrofit = new Retrofit.Builder()
+                .baseUrl( "https://corona.lmao.ninja/v2" )
+                .addConverterFactory( GsonConverterFactory.create() ).build();
+
+        Api api = retrofit.create(Api.class);
+
+        Call<GlobalModel> call = api.getGlobalStats();
+        call.enqueue( new Callback<GlobalModel>() {
             @Override
-            public void onResponse(String response) {
+            public void onResponse(Call<GlobalModel> call, Response<GlobalModel> response) {
+                GlobalModel stats = response.body();
 
+                cases.setText( stats.getCases() );
 
-                try {
-                    JSONObject jsonObject= new JSONObject( response.toString() );
-
-                    cases.setText( jsonObject.getString( "cases" ) );
-                    recovered.setText( jsonObject.getString( "recovered" ) );
-                    critical.setText( jsonObject.getString( "critical" ) );
-                    active.setText( jsonObject.getString( "active" ) );
-                    todayCases.setText( jsonObject.getString( "todayCases" ) );
-                    deaths.setText( jsonObject.getString( "deaths" ) );
-                    todayDeaths.setText( jsonObject.getString( "todayDeaths" ) );
-                    countries.setText( jsonObject.getString( "affectedCountries" ) );
-
-
-                } catch (JSONException e) {
-                    e.printStackTrace();
-                }
-
+                critical.setText( stats.getCritical());
+                active.setText( stats.getActive() );
+                todayCases.setText( stats.getTodayCases() );
+                deaths.setText( stats.getDeaths() );
+                todayDeaths.setText( stats.getTodayCases() );
+                countries.setText( stats.getAffectedCountries() );
 
             }
-        }, new Response.ErrorListener() {
+
             @Override
-            public void onErrorResponse(VolleyError error) {
-                Toast.makeText( MainActivity.this, error.getMessage(), Toast.LENGTH_SHORT ).show();
+            public void onFailure(Call<GlobalModel> call, Throwable t) {
+                Toast.makeText( getApplicationContext(),t.getMessage(),Toast.LENGTH_SHORT ).show();
             }
         } );
-
-
-        RequestQueue requestQueue= Volley.newRequestQueue( this );
-        requestQueue.add( request );
 
     }
 

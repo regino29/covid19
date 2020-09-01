@@ -6,7 +6,7 @@
     android:orientation="horizontal"
     >
 
-    <ImageView
+    <de.hdodenhof.circleimageview.CircleImageView
         android:layout_width="80dp"
         android:layout_height="55dp"
         android:id="@+id/country_item_image"
