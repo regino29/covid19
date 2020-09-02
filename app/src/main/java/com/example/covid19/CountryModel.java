@@ -1,93 +1,111 @@
 package com.example.covid19;
 
+import com.google.gson.annotations.Expose;
+import com.google.gson.annotations.SerializedName;
+
+import java.math.BigInteger;
+
 public class CountryModel {
 
-    private String flag,counry,cases,newCases,deaths,newDeaths,recovered,active,critical;
+    @SerializedName("updated")
+    @Expose
+    public BigInteger updated;
+    @SerializedName("country")
+    @Expose
+    public String country;
+    @SerializedName("countryInfo")
+    @Expose
+    public CountryInfo countryInfo;
+    @SerializedName("cases")
+    @Expose
+    public BigInteger cases;
+    @SerializedName("todayCases")
+    @Expose
+    public BigInteger todayCases;
+    @SerializedName("deaths")
+    @Expose
+    public BigInteger deaths;
+    @SerializedName("todayDeaths")
+    @Expose
+    public BigInteger todayDeaths;
+    @SerializedName("recovered")
+    @Expose
+    public BigInteger recovered;
+    @SerializedName("todayRecovered")
+    @Expose
+    public BigInteger todayRecovered;
+    @SerializedName("active")
+    @Expose
+    public BigInteger active;
+    @SerializedName("critical")
+    @Expose
+    public BigInteger critical;
+    @SerializedName("continent")
+    @Expose
+    public String continent;
 
-    public CountryModel() {
-    }
 
-    public CountryModel(String flag, String counry, String cases, String newCases, String deaths, String newDeaths, String recovered, String active, String critical) {
-        this.flag = flag;
-        this.counry = counry;
+    public CountryModel(BigInteger updated, String country, CountryInfo countryInfo, BigInteger cases, BigInteger todayCases, BigInteger deaths, BigInteger todayDeaths, BigInteger recovered, BigInteger todayRecovered, BigInteger active, BigInteger critical, String continent) {
+        this.updated = updated;
+        this.country = country;
+        this.countryInfo = countryInfo;
         this.cases = cases;
-        this.newCases = newCases;
+        this.todayCases = todayCases;
         this.deaths = deaths;
-        this.newDeaths = newDeaths;
+        this.todayDeaths = todayDeaths;
         this.recovered = recovered;
+        this.todayRecovered = todayRecovered;
         this.active = active;
         this.critical = critical;
+        this.continent = continent;
     }
 
-    public String getFlag() {
-        return flag;
+
+    public BigInteger getUpdated() {
+        return updated;
     }
 
-    public void setFlag(String flag) {
-        this.flag = flag;
+    public String getCountry() {
+        return country;
     }
 
-    public String getCounry() {
-        return counry;
+    public CountryInfo getCountryInfo() {
+        return countryInfo;
     }
 
-    public void setCounry(String counry) {
-        this.counry = counry;
-    }
-
-    public String getCases() {
+    public BigInteger getCases() {
         return cases;
     }
 
-    public void setCases(String cases) {
-        this.cases = cases;
+    public BigInteger getTodayCases() {
+        return todayCases;
     }
 
-    public String getNewCases() {
-        return newCases;
-    }
-
-    public void setNewCases(String newCases) {
-        this.newCases = newCases;
-    }
-
-    public String getDeaths() {
+    public BigInteger getDeaths() {
         return deaths;
     }
 
-    public void setDeaths(String deaths) {
-        this.deaths = deaths;
+    public BigInteger getTodayDeaths() {
+        return todayDeaths;
     }
 
-    public String getNewDeaths() {
-        return newDeaths;
-    }
-
-    public void setNewDeaths(String newDeaths) {
-        this.newDeaths = newDeaths;
-    }
-
-    public String getRecovered() {
+    public BigInteger getRecovered() {
         return recovered;
     }
 
-    public void setRecovered(String recovered) {
-        this.recovered = recovered;
+    public BigInteger getTodayRecovered() {
+        return todayRecovered;
     }
 
-    public String getActive() {
+    public BigInteger getActive() {
         return active;
     }
 
-    public void setActive(String active) {
-        this.active = active;
-    }
-
-    public String getCritical() {
+    public BigInteger getCritical() {
         return critical;
     }
 
-    public void setCritical(String critical) {
-        this.critical = critical;
+    public String getContinent() {
+        return continent;
     }
 }

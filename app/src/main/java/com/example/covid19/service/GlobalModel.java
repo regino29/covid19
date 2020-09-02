@@ -72,7 +72,6 @@ public class GlobalModel {
     private BigInteger affectedCountries;
 
 
-
     public GlobalModel(BigInteger updated, BigInteger cases, BigInteger todayCases, BigInteger deaths, BigInteger todayDeaths, BigInteger recovered, BigInteger todayRecovered, BigInteger active, BigInteger critical, BigInteger casesPerOneMillion, Float deathsPerOneMillion, BigInteger tests, Float testsPerOneMillion, BigInteger population, BigInteger oneCasePerPeople, BigInteger oneDeathPerPeople, BigInteger oneTestPerPeople, Float activePerOneMillion, Float recoveredPerOneMillion, Float criticalPerOneMillion, BigInteger affectedCountries) {
         super();
         this.updated = updated;

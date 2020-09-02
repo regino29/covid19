@@ -27,26 +27,26 @@ public class CountryAdapter extends RecyclerView.Adapter<CountryAdapter.MyViewHo
     private OnNoteListener mOnNoteListener;
 
 
-    public CountryAdapter(List<CountryModel> countries,Context context,OnNoteListener mOnNoteListener){
-        this.countries=countries;
-        fullCountries=new ArrayList<>( countries );
-        this.context=context;
-        this.mOnNoteListener=mOnNoteListener;
+    public CountryAdapter(List<CountryModel> countries, Context context, OnNoteListener mOnNoteListener) {
+        this.countries = countries;
+        fullCountries = new ArrayList<>( countries );
+        this.context = context;
+        this.mOnNoteListener = mOnNoteListener;
     }
 
 
     @NonNull
     @Override
     public CountryAdapter.MyViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        View mView = LayoutInflater.from(parent.getContext()).inflate(R.layout.country_item, parent, false);
-        return new MyViewHolder( mView,mOnNoteListener );
+        View mView = LayoutInflater.from( parent.getContext() ).inflate( R.layout.country_item, parent, false );
+        return new MyViewHolder( mView, mOnNoteListener );
     }
 
     @Override
     public void onBindViewHolder(@NonNull CountryAdapter.MyViewHolder holder, int position) {
 
-        holder.country.setText( countries.get( position ).getCounry() );
-        Glide.with( context ).load( countries.get( position ).getFlag() ).into( holder.flag );
+        holder.country.setText( countries.get( position ).getCountry() );
+        Glide.with( context ).load( countries.get( position ).getCountryInfo().getFlag() ).into( holder.flag );
 
     }
 
@@ -63,15 +63,15 @@ public class CountryAdapter extends RecyclerView.Adapter<CountryAdapter.MyViewHo
     private Filter exampleFilter = new Filter() {
         @Override
         protected FilterResults performFiltering(CharSequence constraint) {
-            List<CountryModel> filteredList = new ArrayList<>(  );
-            if(constraint==null || constraint.length()==0){
+            List<CountryModel> filteredList = new ArrayList<>();
+            if (constraint == null || constraint.length() == 0) {
                 filteredList.addAll( fullCountries );
-            }else{
+            } else {
                 String filterPattern = constraint.toString().toLowerCase().trim();
 
-                for(CountryModel i:fullCountries){
-                    if(i.getCounry().toLowerCase().contains( filterPattern ) ){
-                        filteredList.add(i);
+                for (CountryModel i : fullCountries) {
+                    if (i.getCountry().toLowerCase().contains( filterPattern )) {
+                        filteredList.add( i );
                     }
                 }
             }
@@ -85,13 +85,13 @@ public class CountryAdapter extends RecyclerView.Adapter<CountryAdapter.MyViewHo
         protected void publishResults(CharSequence charSequence, FilterResults results) {
 
             countries.clear();
-            countries.addAll((List) results.values );
+            countries.addAll( (List) results.values );
             notifyDataSetChanged();
 
         }
     };
 
-    public static class MyViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener{
+    public static class MyViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener {
 
         private CircleImageView flag;
         private TextView country;
@@ -100,9 +100,9 @@ public class CountryAdapter extends RecyclerView.Adapter<CountryAdapter.MyViewHo
 
         public MyViewHolder(@NonNull View itemView, OnNoteListener onNoteListener) {
             super( itemView );
-            flag=itemView.findViewById( R.id.country_item_image );
-            country=itemView.findViewById( R.id.country_item_country_name );
-            this.onNoteListener=onNoteListener;
+            flag = itemView.findViewById( R.id.country_item_image );
+            country = itemView.findViewById( R.id.country_item_country_name );
+            this.onNoteListener = onNoteListener;
 
             itemView.setOnClickListener( this );
         }
@@ -113,7 +113,7 @@ public class CountryAdapter extends RecyclerView.Adapter<CountryAdapter.MyViewHo
         }
     }
 
-    public interface  OnNoteListener{
+    public interface OnNoteListener {
         void onNoteClick(int position);
     }
 
