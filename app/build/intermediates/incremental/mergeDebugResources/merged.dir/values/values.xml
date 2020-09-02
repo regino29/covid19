@@ -467,7 +467,7 @@
     <integer name="cancel_button_image_alpha">127</integer>
     <integer name="config_tooltipAnimTime">150</integer>
     <integer name="status_bar_notification_info_maxnum">999</integer>
-    <string name="BASE_URL">https://corona.lmao.ninja/v2/</string>
+    <string name="BASE_URL">https://corona.lmao.ninja/v3/covid-19/</string>
     <string name="abc_action_bar_home_description">Navigate home</string>
     <string name="abc_action_bar_up_description">Navigate up</string>
     <string name="abc_action_menu_overflow_description">More options</string>
