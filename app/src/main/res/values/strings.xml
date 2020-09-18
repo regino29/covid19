@@ -8,4 +8,5 @@
     <string name="hello_world">Hello Square World!</string>
     <string name="title_activity_details">DetailsActivity</string>
     <string name="BASE_URL">https://corona.lmao.ninja/v3/covid-19/</string>
+    <string name="title_activity_chart">Chart</string>
 </resources>

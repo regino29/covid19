@@ -3,6 +3,8 @@ package com.example.covid19;
 import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -31,12 +33,14 @@ import retrofit2.converter.gson.GsonConverterFactory;
 public class DetailsActivity extends AppCompatActivity {
 
     private int position;
-    private List<HistoryModel> historyModels;
-    private String start,end,country;
+    public static List<HistoryModel> historyModels;
+    private String start,end;
+    public static String country;
 
 
     TextView cases, recovered, critical, active, todayCases, deaths, todayDeaths, tiltle;
     CircleImageView flag;
+    Button btn;
     PieChart pieChart;
 
     @Override
@@ -44,6 +48,8 @@ public class DetailsActivity extends AppCompatActivity {
         super.onCreate( savedInstanceState );
         setContentView( R.layout.activity_details );
 
+
+        btn=findViewById( R.id.details_activity_button );
         flag = findViewById( R.id.activity_details_flag );
         cases = findViewById( R.id.activity_details_cases );
         recovered = findViewById( R.id.activity_details_recovered );
@@ -78,6 +84,13 @@ public class DetailsActivity extends AppCompatActivity {
         pieChart.addPieSlice( new PieModel( "Active",Integer.parseInt( active.getText().toString() ), Color.parseColor( "#29B6F6" ) ) );
         pieChart.startAnimation(  );
 
+
+        btn.setOnClickListener( new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity( new Intent( getApplicationContext(),Chart.class ) );
+            }
+        } );
 
         findParams();
         fetchData();

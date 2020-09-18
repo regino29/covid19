@@ -359,6 +359,16 @@
         </androidx.constraintlayout.widget.ConstraintLayout>
 
 
+        <Button
+            android:layout_width="match_parent"
+            android:background="@drawable/button_shape"
+            android:text="Historical Data"
+            android:textColor="#ffff"
+            android:textSize="20sp"
+            android:layout_margin="10dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/details_activity_button"/>
+
     </LinearLayout>
 
 

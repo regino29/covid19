@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from C:\Users\regino\Documents\GitHub\covid19\app\src\main\AndroidManifest.xml:2:1-36:12
-INJECTED from C:\Users\regino\Documents\GitHub\covid19\app\src\main\AndroidManifest.xml:2:1-36:12
-INJECTED from C:\Users\regino\Documents\GitHub\covid19\app\src\main\AndroidManifest.xml:2:1-36:12
-INJECTED from C:\Users\regino\Documents\GitHub\covid19\app\src\main\AndroidManifest.xml:2:1-36:12
+ADDED from C:\Users\regino\Documents\GitHub\covid19\app\src\main\AndroidManifest.xml:2:1-48:12
+INJECTED from C:\Users\regino\Documents\GitHub\covid19\app\src\main\AndroidManifest.xml:2:1-48:12
+INJECTED from C:\Users\regino\Documents\GitHub\covid19\app\src\main\AndroidManifest.xml:2:1-48:12
+INJECTED from C:\Users\regino\Documents\GitHub\covid19\app\src\main\AndroidManifest.xml:2:1-48:12
 MERGED from [androidx.appcompat:appcompat:1.2.0] C:\Users\regino\.gradle\caches\transforms-2\files-2.1\bf96d2b5a86ecd602a621e7e96856420\appcompat-1.2.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.wear:wear:1.0.0] C:\Users\regino\.gradle\caches\transforms-2\files-2.1\fdd42d596c4f70d37e38036f9f6b5091\wear-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] C:\Users\regino\.gradle\caches\transforms-2\files-2.1\75baa063235eedb7ab2cc635bdb88d73\constraintlayout-1.1.3\AndroidManifest.xml:2:1-11:12
@@ -14,6 +14,7 @@ MERGED from [com.android.volley:volley:1.1.1] C:\Users\regino\.gradle\caches\tra
 MERGED from [de.hdodenhof:circleimageview:3.1.0] C:\Users\regino\.gradle\caches\transforms-2\files-2.1\003b3e9ca38bd72fe3f9ef229cece401\jetified-circleimageview-3.1.0\AndroidManifest.xml:2:1-11:12
 MERGED from [com.github.bumptech.glide:glide:4.11.0] C:\Users\regino\.gradle\caches\transforms-2\files-2.1\dc9123763d17d918a4b107f1f30e6b9e\jetified-glide-4.11.0\AndroidManifest.xml:2:1-12:12
 MERGED from [com.github.blackfizz:eazegraph:1.2.2] C:\Users\regino\.gradle\caches\transforms-2\files-2.1\353dfe192273be3949782343375dd848\jetified-eazegraph-1.2.2\AndroidManifest.xml:2:1-14:12
+MERGED from [com.github.PhilJay:MPAndroidChart-Realm:v3.0.3] C:\Users\regino\.gradle\caches\transforms-2\files-2.1\b9e20a845d9234ee063de093879df313\jetified-MPAndroidChart-Realm-v3.0.3\AndroidManifest.xml:2:1-16:12
 MERGED from [androidx.fragment:fragment:1.1.0] C:\Users\regino\.gradle\caches\transforms-2\files-2.1\12c076570219bdc2a11e9d0df335391a\fragment-1.1.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.appcompat:appcompat-resources:1.2.0] C:\Users\regino\.gradle\caches\transforms-2\files-2.1\ee9b51f71825564f346013ea1d4d0318\jetified-appcompat-resources-1.2.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] C:\Users\regino\.gradle\caches\transforms-2\files-2.1\f5ec57ec49d0a3e9add695de66a9078c\legacy-support-core-ui-1.0.0\AndroidManifest.xml:17:1-22:12
@@ -44,20 +45,20 @@ MERGED from [androidx.print:print:1.0.0] C:\Users\regino\.gradle\caches\transfor
 MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] C:\Users\regino\.gradle\caches\transforms-2\files-2.1\c6f1e76c078a7e4f5288325854cab247\lifecycle-livedata-2.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] C:\Users\regino\.gradle\caches\transforms-2\files-2.1\7282e00d74c6a6acf53f4bfd68421266\lifecycle-livedata-core-2.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.arch.core:core-runtime:2.0.0] C:\Users\regino\.gradle\caches\transforms-2\files-2.1\73114719268a97e9fd391905563b2ee9\core-runtime-2.0.0\AndroidManifest.xml:17:1-22:12
-INJECTED from C:\Users\regino\Documents\GitHub\covid19\app\src\main\AndroidManifest.xml:2:1-36:12
-INJECTED from C:\Users\regino\Documents\GitHub\covid19\app\src\main\AndroidManifest.xml:2:1-36:12
-INJECTED from C:\Users\regino\Documents\GitHub\covid19\app\src\main\AndroidManifest.xml:2:1-36:12
+INJECTED from C:\Users\regino\Documents\GitHub\covid19\app\src\main\AndroidManifest.xml:2:1-48:12
+INJECTED from C:\Users\regino\Documents\GitHub\covid19\app\src\main\AndroidManifest.xml:2:1-48:12
+INJECTED from C:\Users\regino\Documents\GitHub\covid19\app\src\main\AndroidManifest.xml:2:1-48:12
 	package
 		ADDED from C:\Users\regino\Documents\GitHub\covid19\app\src\main\AndroidManifest.xml:3:5-34
 		INJECTED from C:\Users\regino\Documents\GitHub\covid19\app\src\main\AndroidManifest.xml
 		INJECTED from C:\Users\regino\Documents\GitHub\covid19\app\src\main\AndroidManifest.xml
 	android:versionName
 		INJECTED from C:\Users\regino\Documents\GitHub\covid19\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\regino\Documents\GitHub\covid19\app\src\main\AndroidManifest.xml:2:1-36:12
+		ADDED from C:\Users\regino\Documents\GitHub\covid19\app\src\main\AndroidManifest.xml:2:1-48:12
 		INJECTED from C:\Users\regino\Documents\GitHub\covid19\app\src\main\AndroidManifest.xml
 	android:versionCode
 		INJECTED from C:\Users\regino\Documents\GitHub\covid19\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\regino\Documents\GitHub\covid19\app\src\main\AndroidManifest.xml:2:1-36:12
+		ADDED from C:\Users\regino\Documents\GitHub\covid19\app\src\main\AndroidManifest.xml:2:1-48:12
 		INJECTED from C:\Users\regino\Documents\GitHub\covid19\app\src\main\AndroidManifest.xml
 	xmlns:android
 		ADDED from C:\Users\regino\Documents\GitHub\covid19\app\src\main\AndroidManifest.xml:2:11-69
@@ -66,11 +67,11 @@ ADDED from C:\Users\regino\Documents\GitHub\covid19\app\src\main\AndroidManifest
 	android:name
 		ADDED from C:\Users\regino\Documents\GitHub\covid19\app\src\main\AndroidManifest.xml:5:22-65
 uses-permission#android.permission.INTERNET
-ADDED from C:\Users\regino\Documents\GitHub\covid19\app\src\main\AndroidManifest.xml:6:5-67
+ADDED from C:\Users\regino\Documents\GitHub\covid19\app\src\main\AndroidManifest.xml:9:5-67
 	android:name
-		ADDED from C:\Users\regino\Documents\GitHub\covid19\app\src\main\AndroidManifest.xml:6:22-64
+		ADDED from C:\Users\regino\Documents\GitHub\covid19\app\src\main\AndroidManifest.xml:9:22-64
 application
-ADDED from C:\Users\regino\Documents\GitHub\covid19\app\src\main\AndroidManifest.xml:8:5-34:19
+ADDED from C:\Users\regino\Documents\GitHub\covid19\app\src\main\AndroidManifest.xml:11:5-46:19
 MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] C:\Users\regino\.gradle\caches\transforms-2\files-2.1\75baa063235eedb7ab2cc635bdb88d73\constraintlayout-1.1.3\AndroidManifest.xml:9:5-20
 MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] C:\Users\regino\.gradle\caches\transforms-2\files-2.1\75baa063235eedb7ab2cc635bdb88d73\constraintlayout-1.1.3\AndroidManifest.xml:9:5-20
 MERGED from [com.android.volley:volley:1.1.1] C:\Users\regino\.gradle\caches\transforms-2\files-2.1\07d99a98b9de0aa238979251b300d88c\jetified-volley-1.1.1\AndroidManifest.xml:9:5-20
@@ -90,49 +91,55 @@ MERGED from [com.github.bumptech.glide:gifdecoder:4.11.0] C:\Users\regino\.gradl
 	android:appComponentFactory
 		ADDED from [androidx.core:core:1.3.0] C:\Users\regino\.gradle\caches\transforms-2\files-2.1\429fb715fcc7711d4ab133e350b6f531\core-1.3.0\AndroidManifest.xml:24:18-86
 	android:supportsRtl
-		ADDED from C:\Users\regino\Documents\GitHub\covid19\app\src\main\AndroidManifest.xml:13:9-35
+		ADDED from C:\Users\regino\Documents\GitHub\covid19\app\src\main\AndroidManifest.xml:16:9-35
 	android:label
-		ADDED from C:\Users\regino\Documents\GitHub\covid19\app\src\main\AndroidManifest.xml:11:9-41
+		ADDED from C:\Users\regino\Documents\GitHub\covid19\app\src\main\AndroidManifest.xml:14:9-41
 	android:roundIcon
-		ADDED from C:\Users\regino\Documents\GitHub\covid19\app\src\main\AndroidManifest.xml:12:9-54
+		ADDED from C:\Users\regino\Documents\GitHub\covid19\app\src\main\AndroidManifest.xml:15:9-54
 	android:icon
-		ADDED from C:\Users\regino\Documents\GitHub\covid19\app\src\main\AndroidManifest.xml:10:9-43
+		ADDED from C:\Users\regino\Documents\GitHub\covid19\app\src\main\AndroidManifest.xml:13:9-43
 	android:allowBackup
-		ADDED from C:\Users\regino\Documents\GitHub\covid19\app\src\main\AndroidManifest.xml:9:9-35
+		ADDED from C:\Users\regino\Documents\GitHub\covid19\app\src\main\AndroidManifest.xml:12:9-35
 	android:theme
-		ADDED from C:\Users\regino\Documents\GitHub\covid19\app\src\main\AndroidManifest.xml:14:9-40
+		ADDED from C:\Users\regino\Documents\GitHub\covid19\app\src\main\AndroidManifest.xml:17:9-40
 meta-data#com.google.android.wearable.standalone
-ADDED from C:\Users\regino\Documents\GitHub\covid19\app\src\main\AndroidManifest.xml:17:9-19:36
+ADDED from C:\Users\regino\Documents\GitHub\covid19\app\src\main\AndroidManifest.xml:26:9-28:36
 	android:value
-		ADDED from C:\Users\regino\Documents\GitHub\covid19\app\src\main\AndroidManifest.xml:19:13-33
+		ADDED from C:\Users\regino\Documents\GitHub\covid19\app\src\main\AndroidManifest.xml:28:13-33
 	android:name
-		ADDED from C:\Users\regino\Documents\GitHub\covid19\app\src\main\AndroidManifest.xml:18:13-66
+		ADDED from C:\Users\regino\Documents\GitHub\covid19\app\src\main\AndroidManifest.xml:27:13-66
+activity#com.example.covid19.Chart
+ADDED from C:\Users\regino\Documents\GitHub\covid19\app\src\main\AndroidManifest.xml:30:9-32:69
+	android:label
+		ADDED from C:\Users\regino\Documents\GitHub\covid19\app\src\main\AndroidManifest.xml:32:13-57
+	android:name
+		ADDED from C:\Users\regino\Documents\GitHub\covid19\app\src\main\AndroidManifest.xml:31:13-34
 activity#com.example.covid19.DetailsActivity
-ADDED from C:\Users\regino\Documents\GitHub\covid19\app\src\main\AndroidManifest.xml:21:9-23:71
+ADDED from C:\Users\regino\Documents\GitHub\covid19\app\src\main\AndroidManifest.xml:33:9-35:62
 	android:label
-		ADDED from C:\Users\regino\Documents\GitHub\covid19\app\src\main\AndroidManifest.xml:23:13-59
+		ADDED from C:\Users\regino\Documents\GitHub\covid19\app\src\main\AndroidManifest.xml:35:13-59
 	android:name
-		ADDED from C:\Users\regino\Documents\GitHub\covid19\app\src\main\AndroidManifest.xml:22:13-44
+		ADDED from C:\Users\regino\Documents\GitHub\covid19\app\src\main\AndroidManifest.xml:34:13-44
 activity#com.example.covid19.Countries
-ADDED from C:\Users\regino\Documents\GitHub\covid19\app\src\main\AndroidManifest.xml:24:9-26:73
+ADDED from C:\Users\regino\Documents\GitHub\covid19\app\src\main\AndroidManifest.xml:36:9-38:64
 	android:label
-		ADDED from C:\Users\regino\Documents\GitHub\covid19\app\src\main\AndroidManifest.xml:26:13-61
+		ADDED from C:\Users\regino\Documents\GitHub\covid19\app\src\main\AndroidManifest.xml:38:13-61
 	android:name
-		ADDED from C:\Users\regino\Documents\GitHub\covid19\app\src\main\AndroidManifest.xml:25:13-38
+		ADDED from C:\Users\regino\Documents\GitHub\covid19\app\src\main\AndroidManifest.xml:37:13-38
 activity#com.example.covid19.MainActivity
-ADDED from C:\Users\regino\Documents\GitHub\covid19\app\src\main\AndroidManifest.xml:27:9-33:20
+ADDED from C:\Users\regino\Documents\GitHub\covid19\app\src\main\AndroidManifest.xml:39:9-45:20
 	android:name
-		ADDED from C:\Users\regino\Documents\GitHub\covid19\app\src\main\AndroidManifest.xml:27:19-47
+		ADDED from C:\Users\regino\Documents\GitHub\covid19\app\src\main\AndroidManifest.xml:39:19-47
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from C:\Users\regino\Documents\GitHub\covid19\app\src\main\AndroidManifest.xml:28:13-32:29
+ADDED from C:\Users\regino\Documents\GitHub\covid19\app\src\main\AndroidManifest.xml:40:13-44:29
 action#android.intent.action.MAIN
-ADDED from C:\Users\regino\Documents\GitHub\covid19\app\src\main\AndroidManifest.xml:29:17-69
+ADDED from C:\Users\regino\Documents\GitHub\covid19\app\src\main\AndroidManifest.xml:41:17-69
 	android:name
-		ADDED from C:\Users\regino\Documents\GitHub\covid19\app\src\main\AndroidManifest.xml:29:25-66
+		ADDED from C:\Users\regino\Documents\GitHub\covid19\app\src\main\AndroidManifest.xml:41:25-66
 category#android.intent.category.LAUNCHER
-ADDED from C:\Users\regino\Documents\GitHub\covid19\app\src\main\AndroidManifest.xml:31:17-77
+ADDED from C:\Users\regino\Documents\GitHub\covid19\app\src\main\AndroidManifest.xml:43:17-77
 	android:name
-		ADDED from C:\Users\regino\Documents\GitHub\covid19\app\src\main\AndroidManifest.xml:31:27-74
+		ADDED from C:\Users\regino\Documents\GitHub\covid19\app\src\main\AndroidManifest.xml:43:27-74
 uses-sdk
 INJECTED from C:\Users\regino\Documents\GitHub\covid19\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from C:\Users\regino\Documents\GitHub\covid19\app\src\main\AndroidManifest.xml
@@ -157,6 +164,8 @@ MERGED from [com.github.bumptech.glide:glide:4.11.0] C:\Users\regino\.gradle\cac
 MERGED from [com.github.bumptech.glide:glide:4.11.0] C:\Users\regino\.gradle\caches\transforms-2\files-2.1\dc9123763d17d918a4b107f1f30e6b9e\jetified-glide-4.11.0\AndroidManifest.xml:6:5-8:41
 MERGED from [com.github.blackfizz:eazegraph:1.2.2] C:\Users\regino\.gradle\caches\transforms-2\files-2.1\353dfe192273be3949782343375dd848\jetified-eazegraph-1.2.2\AndroidManifest.xml:7:5-9:41
 MERGED from [com.github.blackfizz:eazegraph:1.2.2] C:\Users\regino\.gradle\caches\transforms-2\files-2.1\353dfe192273be3949782343375dd848\jetified-eazegraph-1.2.2\AndroidManifest.xml:7:5-9:41
+MERGED from [com.github.PhilJay:MPAndroidChart-Realm:v3.0.3] C:\Users\regino\.gradle\caches\transforms-2\files-2.1\b9e20a845d9234ee063de093879df313\jetified-MPAndroidChart-Realm-v3.0.3\AndroidManifest.xml:12:5-14:41
+MERGED from [com.github.PhilJay:MPAndroidChart-Realm:v3.0.3] C:\Users\regino\.gradle\caches\transforms-2\files-2.1\b9e20a845d9234ee063de093879df313\jetified-MPAndroidChart-Realm-v3.0.3\AndroidManifest.xml:12:5-14:41
 MERGED from [androidx.fragment:fragment:1.1.0] C:\Users\regino\.gradle\caches\transforms-2\files-2.1\12c076570219bdc2a11e9d0df335391a\fragment-1.1.0\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.fragment:fragment:1.1.0] C:\Users\regino\.gradle\caches\transforms-2\files-2.1\12c076570219bdc2a11e9d0df335391a\fragment-1.1.0\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.appcompat:appcompat-resources:1.2.0] C:\Users\regino\.gradle\caches\transforms-2\files-2.1\ee9b51f71825564f346013ea1d4d0318\jetified-appcompat-resources-1.2.0\AndroidManifest.xml:20:5-22:41

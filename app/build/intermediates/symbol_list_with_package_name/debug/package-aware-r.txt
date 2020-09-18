@@ -984,6 +984,8 @@ id action_mode_bar_stub
 id action_mode_close_button
 id action_text
 id actions
+id activity_chart_graph
+id activity_chart_text
 id activity_chooser_view_content
 id activity_countries_recyclerView
 id activity_countries_search
@@ -1037,6 +1039,7 @@ id custom
 id customPanel
 id decor_content_parent
 id default_activity_button
+id details_activity_button
 id details_activity_piechart
 id dialog_button
 id dimensions
@@ -1236,6 +1239,7 @@ layout abc_search_dropdown_item_icons_2line
 layout abc_search_view
 layout abc_select_dialog_material
 layout abc_tooltip
+layout activity_chart
 layout activity_countries
 layout activity_details
 layout activity_main
@@ -1302,6 +1306,7 @@ string app_name
 string hello_world
 string search_menu_title
 string status_bar_notification_info_overflow
+string title_activity_chart
 string title_activity_countries
 string title_activity_details
 string ws_action_drawer_content_description
