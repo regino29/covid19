@@ -984,7 +984,9 @@ id action_mode_bar_stub
 id action_mode_close_button
 id action_text
 id actions
+id activity_chart_button
 id activity_chart_graph
+id activity_chart_linechart
 id activity_chart_text
 id activity_chooser_view_content
 id activity_countries_recyclerView
