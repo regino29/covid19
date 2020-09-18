@@ -95,7 +95,7 @@ public class Chart extends AppCompatActivity {
         }
 
 
-        LineDataSet lineDataSet = new LineDataSet( lineEntryArrayList,"Monthly sales" );
+        LineDataSet lineDataSet = new LineDataSet( lineEntryArrayList,"Month" );
         lineDataSet.setColors( ColorTemplate.COLORFUL_COLORS );
         Description description = new Description();
         description.setText( "Months" );
@@ -144,7 +144,7 @@ public class Chart extends AppCompatActivity {
         }
 
 
-        BarDataSet barDataSet = new BarDataSet( barEntryArrayList,"Monthly sales" );
+        BarDataSet barDataSet = new BarDataSet( barEntryArrayList,"Month" );
         barDataSet.setColors( ColorTemplate.COLORFUL_COLORS );
         Description description = new Description();
         description.setText( "Months" );
