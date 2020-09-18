@@ -95,10 +95,10 @@ public class Chart extends AppCompatActivity {
         }
 
 
-        LineDataSet lineDataSet = new LineDataSet( lineEntryArrayList,"Month" );
+        LineDataSet lineDataSet = new LineDataSet( lineEntryArrayList,"Date" );
         lineDataSet.setColors( ColorTemplate.COLORFUL_COLORS );
         Description description = new Description();
-        description.setText( "Months" );
+        description.setText( "Date" );
         lineChart.setDescription( description );
 
         LineData lineData = new LineData( lineDataSet );
@@ -144,10 +144,10 @@ public class Chart extends AppCompatActivity {
         }
 
 
-        BarDataSet barDataSet = new BarDataSet( barEntryArrayList,"Month" );
+        BarDataSet barDataSet = new BarDataSet( barEntryArrayList,"Date" );
         barDataSet.setColors( ColorTemplate.COLORFUL_COLORS );
         Description description = new Description();
-        description.setText( "Months" );
+        description.setText( "Date" );
         barChart.setDescription( description );
 
         BarData barData = new BarData( barDataSet );
