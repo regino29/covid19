@@ -88,7 +88,10 @@ public class DetailsActivity extends AppCompatActivity {
         btn.setOnClickListener( new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity( new Intent( getApplicationContext(),Chart.class ) );
+                if(historyModels.size()>0)
+                    startActivity( new Intent( getApplicationContext(),Chart.class ) );
+                else
+                    Toast.makeText( getApplicationContext(),"No available data",Toast.LENGTH_SHORT ).show();
             }
         } );
 

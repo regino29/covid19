@@ -985,6 +985,7 @@ id action_mode_close_button
 id action_text
 id actions
 id activity_chart_button
+id activity_chart_combined
 id activity_chart_graph
 id activity_chart_linechart
 id activity_chart_text
